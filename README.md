@@ -1,4 +1,4 @@
 <h1>Задание</h1>
-<a href="https://github.com/SomeoneAtLeast/Task/blob/master/dist/index.html">
+<a href="https://someoneatleast.github.io/Task/dist/index.html">
 	Посмотреть
 </a>
