@@ -1,0 +1,32 @@
+@import "./normalize/normalize.scss";
+@import "./variables/variables.scss";
+@import "./mixins/mixins.scss";
+@import "./utils/fonts.scss";
+
+body {
+	min-width: 320px;
+	overflow: scroll;
+	@include standart-font-and-color;
+}
+
+.index {
+	background-color: #f4f4f6;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
