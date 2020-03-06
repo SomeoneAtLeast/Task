@@ -1,0 +1,24 @@
+.third-info-block {
+	padding-top: 5px;
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+
+.third-info-block-show {
+	display: block;
+}
+
+.third-info-block__additional-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 13px;
+}
+
+@media (min-width: $tablet)  {
+
+	.third-info-block__additional-info {
+		font-size: 14px;
+	}
+}

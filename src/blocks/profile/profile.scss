@@ -1,0 +1,13 @@
+.profile {
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	margin: 0 auto;
+}
+
+@media (min-width: $tablet)  {
+
+	.profile {
+		width: 700px;
+	}
+}

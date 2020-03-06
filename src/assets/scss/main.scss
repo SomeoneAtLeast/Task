@@ -4,13 +4,9 @@
 @import "./utils/fonts.scss";
 
 body {
-	min-width: 320px;
+	min-width: 410px;
 	overflow: scroll;
 	@include standart-font-and-color;
-}
-
-.index {
-	background-color: #f4f4f6;
 }
 
 a {
@@ -30,3 +26,11 @@ img {
 	height: 1px;
 	margin: -1px;
 }
+
+@import "../../pages/main-pages/index.scss";
+@import "../../blocks/profile-img/profile-img.scss";
+@import "../../blocks/profile/profile.scss";
+@import "../../blocks/info-blocks/info-blocks.scss";
+@import "../../blocks/first-info-block/first-info-block.scss";
+@import "../../blocks/second-info-block/second-info-block.scss";
+@import "../../blocks/third-info-block/third-info-block.scss";

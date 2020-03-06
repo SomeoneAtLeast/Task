@@ -1,0 +1,14 @@
+.profile-page {
+	background-color: $main-background-color;
+}
+
+.profile-page__container {
+	padding-top: 5px;
+}
+
+@media (min-width: $tablet)  {
+
+	.profile-page__container {
+		padding: 15px;
+	}
+}

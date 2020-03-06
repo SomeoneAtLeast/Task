@@ -1,0 +1,11 @@
+.info-blocks {
+	width: 245px;
+	position: relative;
+}
+
+@media (min-width: $tablet)  {
+
+	.info-blocks {
+		width: auto;
+	}
+}

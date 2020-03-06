@@ -1,9 +1,14 @@
 import React from "react";
 
+import ProfileImg from "./../profile-img/profile-img.js";
+import InfoBlocks from "./../info-blocks/info-blocks.js";
+
+
 const Profile = () => {
   return (
 	<section className="profile">
-		<span>На старт!</span>
+		<ProfileImg />
+		<InfoBlocks />
 	</section>
   );
 };
