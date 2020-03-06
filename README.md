@@ -1,3 +1,4 @@
-<a href="https://someoneatleast.github.io/Task/index.htm">
-	<h1>Посмотреть</h1>
+<h1>Задание</h1>
+<a href="https://github.com/SomeoneAtLeast/Task/blob/master/dist/index.html">
+	Посмотреть
 </a>
