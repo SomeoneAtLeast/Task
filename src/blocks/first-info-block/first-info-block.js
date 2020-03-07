@@ -1,28 +1,28 @@
 import React from "react";
 
-const FirstInfoBlock = () => {
+const FirstInfoBlock = ({fullInfoAboutTheEmployee}) => {
   return (
   	<div className="first-info-block">
   		<div className="first-info-block__name">
   			<div className="first-info-block__name-text">
-  				Сидор Петрович Ручкин
+  				{fullInfoAboutTheEmployee.names.name.first} {fullInfoAboutTheEmployee.names.name.patronymic} {fullInfoAboutTheEmployee.names.name.last}
   			</div>
   		</div>
   		<div className="first-info-block__lists">
   			<ul className="first-info-block__list first-info-block__list--branch">
   				<li className="first-info-block__list-item">
   					<span className="first-info-block__list-text">
-  						Филиал 1
+            {fullInfoAboutTheEmployee.department[2].name}
   					</span>
   					<ul className="first-info-block__list first-info-block__list--department">
   						<li className="first-info-block__list-item">
   							<span className="first-info-block__list-text">
-  								Департамент 5
+  								{fullInfoAboutTheEmployee.department[1].name}
   							</span>
   							<ul className="first-info-block__list first-info-block__list-unit">
   								<li className="first-info-block__list-item">
   									<span className="first-info-block__list-text">
-  										Отдел 7
+  										{fullInfoAboutTheEmployee.department[0].name}
   									</span>
   								</li>
   							</ul>
@@ -33,7 +33,7 @@ const FirstInfoBlock = () => {
   		</div>
   		<div className="first-info-block__position">
   			<span className="first-info-block__position-text">
-  				Начальник отдела
+  				{fullInfoAboutTheEmployee.position.jobTitle}
   			</span>
   		</div>	
   	</div>

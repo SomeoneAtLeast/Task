@@ -1,6 +1,6 @@
 import React from "react";
 
-const SecondInfoBlock = () => {
+const SecondInfoBlock = ({fullInfoAboutTheEmployee}) => {
   return (
       <div className="second-info-block">
         <div className="second-info-block__contacts">
@@ -8,7 +8,7 @@ const SecondInfoBlock = () => {
             email
           </span>
           <span className="second-info-block__value">
-             peter.ivanov@exmaple.com
+             {fullInfoAboutTheEmployee.contacts.email}
           </span>
         </div>
         <div className="second-info-block__contacts">
@@ -16,7 +16,7 @@ const SecondInfoBlock = () => {
             Телефон
           </span>
           <span className="second-info-block__value">
-            +7999123123
+            {fullInfoAboutTheEmployee.contacts.phoneWork}
           </span>
         </div>
         <div className="second-info-block__contacts">
@@ -24,7 +24,7 @@ const SecondInfoBlock = () => {
             Кабинет
           </span>
           <span className="second-info-block__value">
-            314
+            {fullInfoAboutTheEmployee.contacts.office}
           </span>
         </div>      
       </div>

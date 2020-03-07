@@ -1,9 +1,9 @@
 import React from "react";
 
-const ProfileImg = () => {
+const ProfileImg = ({fullInfoAboutTheEmployee}) => {
   return (
   	<div className="profile-img">
-  		<img className="profile-img__img" src="./assets/img/profile-img.jpg" alt="Изображение профиля"></img>
+  		<img className="profile-img__img" src={fullInfoAboutTheEmployee.profileImg.pictureUrl} alt="Изображение профиля"></img>
   	</div>
   );
 };

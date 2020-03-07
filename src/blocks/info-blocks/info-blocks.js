@@ -3,12 +3,12 @@ import FirstInfoBlock from "./../first-info-block/first-info-block.js";
 import SecondInfoBlock from "./../second-info-block/second-info-block.js";
 import ThirdInfoBlock from "./../third-info-block/third-info-block.js";
 
-const InfoBlocks = () => {
+const InfoBlocks = ({fullInfoAboutTheEmployee}) => {
   return (
 	<div className="info-blocks">
-		<FirstInfoBlock />
-		<SecondInfoBlock />
-		<ThirdInfoBlock />
+		<FirstInfoBlock fullInfoAboutTheEmployee={fullInfoAboutTheEmployee}/>
+		<SecondInfoBlock fullInfoAboutTheEmployee={fullInfoAboutTheEmployee}/>
+		<ThirdInfoBlock fullInfoAboutTheEmployee={fullInfoAboutTheEmployee}/>
 	</div>
   );
 };
