@@ -4,7 +4,7 @@
 @import "./utils/fonts.scss";
 
 body {
-	min-width: 420px;
+	min-width: 320px;
 	overflow: scroll;
 	@include standart-font-and-color;
 }
