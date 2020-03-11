@@ -7,9 +7,9 @@ const SecondInfoBlock = ({fullInfoAboutTheEmployee}) => {
           <span className="second-info-block__definition">
             email
           </span>
-          <span className="second-info-block__value">
+          <a href={fullInfoAboutTheEmployee.contacts.mailtoEmail} className="second-info-block__value">
              {fullInfoAboutTheEmployee.contacts.email}
-          </span>
+          </a>
         </div>
         <div className="second-info-block__contacts">
           <span className="second-info-block__definition">

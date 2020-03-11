@@ -38,7 +38,8 @@ const Profile = () => {
 
         contacts: { 
             phoneWork: "123", 
-            phoneMobile: "+7 111 555 55 55", 
+            phoneMobile: "+7 111 555 55 55",
+            mailtoEmail: "mailto:peter.ivanov@exmaple.com",  
             email: "peter.ivanov@exmaple.com", 
             office: "314", 
             fax: "+7 111 555 55 66" 

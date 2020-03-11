@@ -4,24 +4,24 @@ const FirstInfoBlock = ({fullInfoAboutTheEmployee}) => {
   return (
   	<div className="first-info-block">
   		<div className="first-info-block__name">
-  			<div className="first-info-block__name-text">
+  			<div className="first-info-block__name-text" key={fullInfoAboutTheEmployee.names.id}>
   				{fullInfoAboutTheEmployee.names.name.first} {fullInfoAboutTheEmployee.names.name.patronymic} {fullInfoAboutTheEmployee.names.name.last}
   			</div>
   		</div>
   		<div className="first-info-block__lists">
   			<ul className="first-info-block__list first-info-block__list--branch">
   				<li className="first-info-block__list-item">
-  					<span className="first-info-block__list-text">
+  					<span className="first-info-block__list-text" key={fullInfoAboutTheEmployee.department[2].id}>
             {fullInfoAboutTheEmployee.department[2].name}
   					</span>
   					<ul className="first-info-block__list first-info-block__list--department">
   						<li className="first-info-block__list-item">
-  							<span className="first-info-block__list-text">
+  							<span className="first-info-block__list-text" key={fullInfoAboutTheEmployee.department[1].id}>
   								{fullInfoAboutTheEmployee.department[1].name}
   							</span>
   							<ul className="first-info-block__list first-info-block__list-unit">
   								<li className="first-info-block__list-item">
-  									<span className="first-info-block__list-text">
+  									<span className="first-info-block__list-text" key={fullInfoAboutTheEmployee.department[0].id}>
   										{fullInfoAboutTheEmployee.department[0].name}
   									</span>
   								</li>
