@@ -1,26 +1,37 @@
-import React from "react";
+import React, {Component} from "react";
 
-export default class ThirdInfoBlock extends React.Component {
+export default class ThirdInfoBlock extends Component {
 
     render() { 
 
+      const {fullInfoAboutTheEmployee} = this.props;
+
     	return (
     		<React.Fragment>
-  	  			<div className="third-info-block">
+          <div className="third-info-block">
+  	  			<div className="third-info-block__wrapper">
         			<div className="third-info-block__additional-info">
           				<span className="third-info-block__definition">
             				Сотовый
           				</span>
           				<span className="third-info-block__value">
-             				+701230123123
+             				{fullInfoAboutTheEmployee.contacts.phoneMobile}
           				</span>
         				</div>
+                <div className="third-info-block__additional-info">
+                  <span className="third-info-block__definition">
+                    Факс
+                  </span>
+                  <span className="third-info-block__value">
+                    {fullInfoAboutTheEmployee.contacts.fax}
+                  </span>
+                </div>
         				<div className="third-info-block__additional-info">
           				<span className="third-info-block__definition">
             				День рождения
           				</span>
           				<span className="third-info-block__value">
-            				01/01/01
+            				{fullInfoAboutTheEmployee.dayOfBirth.birthday}
           				</span>
         				</div>
         				<div className="third-info-block__additional-info">
@@ -28,7 +39,7 @@ export default class ThirdInfoBlock extends React.Component {
             				Дата найма
           				</span>
           				<span className="third-info-block__value">
-            				314/31/132
+            				{fullInfoAboutTheEmployee.hiringDay.hireDate}
           				</span>
         				</div>
         				<div className="third-info-block__additional-info">
@@ -36,11 +47,12 @@ export default class ThirdInfoBlock extends React.Component {
             				Руководитель
           				</span>
           				<span className="third-info-block__value">
-            				Алег
+            				{fullInfoAboutTheEmployee.manager.name.first} {fullInfoAboutTheEmployee.manager.name.patronymic} {fullInfoAboutTheEmployee.manager.name.last}
           				</span>
         			</div>       
       			</div>
       			<button type="button">Fsaadsdas</button>
+          </div>
     		</React.Fragment>
   		);
   	};

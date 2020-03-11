@@ -1,4 +1,4 @@
-.third-info-block {
+.third-info-block__wrapper {
 	padding-top: 5px;
 	width: 100%;
 	display: none;
@@ -12,8 +12,11 @@
 .third-info-block__additional-info {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	font-size: 13px;
+}
+
+.third-info-block__value {
+	text-align: right;
 }
 
 @media (min-width: $tablet)  {

@@ -45,16 +45,16 @@ const Profile = () => {
         },
 
         dayOfBirth: {
-            "birthday": "1990-03-05"
+            birthday: "1990-03-05"
         },
 
         hiringDay: {
-            "hireDate": "2010-05-15"
+            hireDate: "2010-05-15"
         },
 
         manager: { 
-            "id": 1256, 
-            "name": 
+            id: 1256, 
+            name: 
             { 
                 "first": "Сидор", 
                 "patronymic": "Иванович", 
